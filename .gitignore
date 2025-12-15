@@ -1,24 +1,16 @@
-# Ignore SDK and vendor code
-/FtcRobotController/FtcLib/
-# Or any other SDK folder inside FtcRobotController
+# Ignore everything at repo root
+*
 
-# Ignore build outputs
-/build/
-/**/build/
-.gradle/
+# But keep directories so we can whitelist a specific folder
+!*/
 
-# IDE/OS files
-/.idea/
-*.iml
-local.properties
-.DS_Store
-Thumbs.db
+# Whitelist TeamCode directory and everything inside it
+!TeamCode/
+!TeamCode/**
 
-# Keystores/binaries
-*.keystore
-*.apk
-*.jar
+# Keep this gitignore file tracked
+!.gitignore
 
-# Temp/logs
-*.log
-*.tmp
+# (Optional) If you want to keep other files tracked, add specific !patterns below
+# Example: to keep README.md tracked, uncomment the next line
+# !README.md
