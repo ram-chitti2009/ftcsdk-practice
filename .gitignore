@@ -1,32 +1,24 @@
-# Ignore vendored FTC SDK source and packaged controller app
-/FtcRobotController/
+# Ignore SDK and vendor code
+/FtcRobotController/FtcLib/
+# Or any other SDK folder inside FtcRobotController
 
-# Ignore local TeamCode-placed libraries (optional)
-/TeamCode/lib/
-
-# Gradle and build artifacts
-.gradle/
+# Ignore build outputs
 /build/
-**/build/
+/**/build/
+.gradle/
 
-# Android/IDE files
-local.properties
+# IDE/OS files
 /.idea/
 *.iml
+local.properties
+.DS_Store
+Thumbs.db
 
-# Keystores and generated binaries
+# Keystores/binaries
 *.keystore
 *.apk
 *.jar
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Log and temporary files
+# Temp/logs
 *.log
 *.tmp
-
-# Node/npm artifacts (if any)
-node_modules/
-
